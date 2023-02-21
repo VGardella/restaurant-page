@@ -17,7 +17,7 @@ const logo = document.createElement('img');
 navMenu.classList.add('nav-menu');
 board.classList.add('board');
 pages.classList.add('page-links');
-logo.classList.add('logo')
+logo.classList.add('nav-logo')
 
 home.innerHTML = 'Home';
 menu.innerHTML = 'Menu';
