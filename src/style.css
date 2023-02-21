@@ -35,6 +35,8 @@ body{
 .logo{
     padding: 0 50px;
     margin-right: auto;
+    height: 70px;
+    align-self: center;
 }
 
 .page-links{
@@ -48,6 +50,5 @@ body{
 }
 
 .page-link{
-    
     padding: 50px;
 }
