@@ -1,11 +1,13 @@
+import Logo from './images/logo.png'
+
 // Homepage
 
 function insertLogo() {
     const board = document.querySelector('.board');
     const logoContainer = document.createElement('div');
-    const principalLogo = document.createElement('img');
+    const principalLogo = new Image();
 
-    principalLogo.src = '/src/images/logo.png';
+    principalLogo.src = Logo;
 
     logoContainer.classList.add('logo-container');
     principalLogo.classList.add('princ-logo');
@@ -14,4 +16,15 @@ function insertLogo() {
     board.appendChild(logoContainer);
 }
 
-export {insertLogo};
+function insertText() {
+    const board = document.querySelector('.board');
+    const text = document.createElement('div');
+
+    text.innerHTML = 'Every flavor has a story';
+
+    text.classList.add('subtext');
+
+    board.appendChild(text);
+}
+
+export {insertLogo, insertText};

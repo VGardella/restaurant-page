@@ -1,3 +1,5 @@
+import Logo from './images/logo2.png'
+
 // Homepage
 
 function createNav() {
@@ -7,7 +9,7 @@ function createNav() {
     const home = document.createElement('li');
     const menu = document.createElement('li');
     const contact = document.createElement('li');
-    const logo = document.createElement('img');
+    const logo = new Image();
 
     navMenu.classList.add('nav-menu');
     pages.classList.add('page-links');
@@ -16,10 +18,7 @@ function createNav() {
     home.innerHTML = 'Home';
     menu.innerHTML = 'Menu';
     contact.innerHTML = 'Contact';
-    logo.src = '/src/images/logo2.png'
-
-    const links = document.querySelectorAll('li');
-    links.forEach((link) => link.classList.add('page-link'));
+    logo.src = Logo;
 
     body.appendChild(navMenu);
     navMenu.appendChild(logo);
@@ -27,6 +26,9 @@ function createNav() {
     pages.appendChild(home);
     pages.appendChild(menu);
     pages.appendChild(contact);
+
+    const links = document.querySelectorAll('li');
+    links.forEach((link) => link.classList.add('page-link'));
 }
 
 function createBoard() {
