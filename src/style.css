@@ -19,8 +19,7 @@ body{
 .board{
     width: 60vw;
     height: 100vh;
-    background-color: black;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .subtitle{
@@ -34,8 +33,7 @@ body{
 .nav-menu{
     height: 100px;
     width: 100%;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: end;
 }
