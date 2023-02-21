@@ -22,6 +22,7 @@ logo.classList.add('logo')
 home.innerHTML = 'Home';
 menu.innerHTML = 'Menu';
 contact.innerHTML = 'Contact';
+logo.src = '/src/images/logo2.png'
 
 body.appendChild(navMenu);
 body.appendChild(board);
