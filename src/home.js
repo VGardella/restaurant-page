@@ -26,5 +26,29 @@ function insertLogo() {
     text.appendChild(line2);
 }
 
+function Hours() {
+    const board = document.querySelector('.board');
+    const hoursContainer = document.createElement('div');
+    const hoursTitle = document.createElement('div');
+    const hoursList = document.createElement('ul');
+    const hours = ['Monday-Friday: 9:00 - 17:00',
+                   'Saturday: 10:00 - 17:00',
+                   'Sunday: 10:00 - 13:00']
 
-export {insertLogo};
+    hoursContainer.classList.add('hours-cont');
+    hoursTitle.classList.add('hours-title');
+    hoursList.classList.add('hours-list');
+
+    for (const hour in hours) {
+        const day = document.createElement('li');
+        day.innerHTML = hour;
+        day.classList.add('hour');
+        day.appendChild(hoursList);
+    };
+
+    hoursContainer.appendChild(hoursTitle);
+    hoursContainer.appendChild(hoursList);
+    board.appendChild(hoursContainer);
+}
+
+export {insertLogo, Hours};
