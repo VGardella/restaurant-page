@@ -39,11 +39,11 @@ function Hours() {
     hoursTitle.classList.add('hours-title');
     hoursList.classList.add('hours-list');
 
-    for (const hour in hours) {
-        const day = document.createElement('li');
-        day.innerHTML = hour;
+    for (let hour in hours) {
+        let day = document.createElement('li');
+        day.innerHTML = hours[hour];
         day.classList.add('hour');
-        day.appendChild(hoursList);
+        hoursList.appendChild(day);
     };
 
     hoursContainer.appendChild(hoursTitle);
