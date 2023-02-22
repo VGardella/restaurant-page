@@ -39,6 +39,8 @@ function Hours() {
     hoursTitle.classList.add('hours-title');
     hoursList.classList.add('hours-list');
 
+    hoursTitle.innerHTML = 'Hours';
+
     for (let hour in hours) {
         let day = document.createElement('li');
         day.innerHTML = hours[hour];
