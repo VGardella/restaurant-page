@@ -50,12 +50,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50%;
     padding: 50px 0;
 }
 
 .princ-logo{
-    width: 700px;
+    width: 500px;
 }
 
 .page-links{
@@ -71,3 +71,16 @@ body{
 .page-link{
     padding: 50px;
 }
+
+.subtext{
+    font-size: 40px;
+    color: white;
+    font-family: 'MyFont';
+    width: 50%;
+    padding-top: 200px;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf');
+  }
