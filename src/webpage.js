@@ -40,4 +40,15 @@ function createBoard() {
     body.appendChild(board);
 }
 
-export {createNav, createBoard};
+function titleBar() {
+    const board = document.querySelector('.board');
+    const titleContainer = document.createElement('div');
+
+    titleContainer.innerHTML = 'Title';
+
+    titleContainer.classList.add('board-title');
+
+    board.appendChild(titleContainer);
+}
+
+export {createNav, createBoard, titleBar};
