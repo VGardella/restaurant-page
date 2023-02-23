@@ -7,5 +7,3 @@ import { Hours, insertLogo } from './home';
 createNav();
 createBoard();
 titleBar();
-insertLogo();
-Hours();
