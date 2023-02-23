@@ -1,3 +1,4 @@
+import { menuPage } from './menu';
 import './style.css';
 
 import { createNav, titleBar } from './webpage';
@@ -6,4 +7,5 @@ import { Hours, insertLogo } from './home';
 
 createNav();
 createBoard();
-titleBar();
+titleBar('Menu');
+menuPage();
