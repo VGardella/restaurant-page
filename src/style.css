@@ -5,23 +5,30 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
 }
 
 
 @font-face {
     font-family: 'MyFont';
     src: url('./fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf');
-  }
+}
+
+@font-face {
+    font-family: 'MyFont2';
+    src: url('./fonts/Holigate-Signature/Holligate\ Signature\ Demo.ttf');
+}
 
 #container{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    overflow-y: scroll;
 }
 
 /* NAVEGATION BAR */
@@ -63,6 +70,18 @@ body{
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
+}
+
+.board-title{
+    background: -webkit-radial-gradient(rgba(129,107,27,1), rgba(232,203,97,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'MyFont2';
+    font-size: 50px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 20px;
 }
 
 /* BOARD - HOME */
