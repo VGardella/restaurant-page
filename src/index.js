@@ -3,9 +3,10 @@ import './style.css';
 
 import { createNav, titleBar } from './webpage';
 import { createBoard } from './webpage';
-import { Hours, insertLogo } from './home';
+import { Hours, insertLogo, Location} from './home';
 
 createNav();
 createBoard();
-titleBar('Menu');
-menuPage();
+insertLogo();
+Hours();
+Location();

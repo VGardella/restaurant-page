@@ -26,6 +26,24 @@ function insertLogo() {
     text.appendChild(line2);
 }
 
+function Location() {
+    const board = document.querySelector('.board');
+    const locationContainer = document.createElement('div');
+    const locationTitle = document.createElement('div');
+    const locationContent = document.createElement('div');
+
+    locationContainer.classList.add('location-container');
+    locationTitle.classList.add('title');
+    locationContent.classList.add('location-cont');
+
+    locationTitle.innerHTML = 'Location';
+    locationContent.innerHTML = '3082 King Center, Sacramento, California';
+
+    board.appendChild(locationContainer);
+    locationContainer.appendChild(locationTitle);
+    locationContainer.appendChild(locationContent);
+}
+
 function Hours() {
     const board = document.querySelector('.board');
     const hoursContainer = document.createElement('div');
@@ -36,7 +54,7 @@ function Hours() {
                    'Sunday: 10:00 - 13:00']
 
     hoursContainer.classList.add('hours-cont');
-    hoursTitle.classList.add('hours-title');
+    hoursTitle.classList.add('title');
     hoursList.classList.add('hours-list');
 
     hoursTitle.innerHTML = 'Hours';
@@ -53,4 +71,4 @@ function Hours() {
     board.appendChild(hoursContainer);
 }
 
-export {insertLogo, Hours};
+export {insertLogo, Hours, Location};
