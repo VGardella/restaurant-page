@@ -40,11 +40,11 @@ function createBoard() {
     body.appendChild(board);
 }
 
-function titleBar() {
+function titleBar(title) {
     const board = document.querySelector('.board');
     const titleContainer = document.createElement('div');
 
-    titleContainer.innerHTML = 'Title';
+    titleContainer.innerHTML = title;
 
     titleContainer.classList.add('board-title');
 
